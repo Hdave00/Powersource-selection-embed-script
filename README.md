@@ -78,4 +78,3 @@ The output will display the selected power source(s) based on the preset prefere
 * The algorithm is inspired by runoff election logic but repurposed for resource allocation.
 * Can be extended to handle dynamic preferences, real-time sensor input, or additional selection criteria.
 
-```
