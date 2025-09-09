@@ -79,9 +79,3 @@ The output will display the selected power source(s) based on the preset prefere
 * Can be extended to handle dynamic preferences, real-time sensor input, or additional selection criteria.
 
 ```
-
-This README is concise, professional, and explains the **purpose, logic, and usage** of your embedded power source selection script without unnecessary emojis.  
-
-If you want, I can also add a **diagram showing the iterative elimination flow**, which is helpful for embedded system documentation. Do you want me to do that?
-```
----
