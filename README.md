@@ -1,4 +1,3 @@
-````md
 # Embedded Power Source Selection
 
 This project demonstrates a **power source selection algorithm** for embedded systems, inspired by runoff election logic. The program selects the most suitable power source for a set of consumers based on their ranked preferences, iteratively eliminating less preferred or overloaded sources until a viable choice is determined.
@@ -44,7 +43,7 @@ int preset_preferences[5][3] = {
     {0, 2, 1},  // Consumer 3 prefers Battery -> USB -> Solar
     {2, 0, 1}   // Consumer 4 prefers USB -> Battery -> Solar
 };
-````
+```
 ---
 
 ## Benefits
