@@ -68,10 +68,10 @@ int main(void)
         }
     }
 
-    // Keep reallocating until viable source exists
+    // Keep reallocating until viable source exists, not really recursively because that might get messy without malloc
     while (true)
     {
-        // Calculate supply given remaining sources
+        // Calculate supply, given remaining sources
         allocate();
 
         // Check if a source has been selected
