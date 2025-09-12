@@ -85,7 +85,7 @@ int main(void)
         int min = find_min();
         bool conflict = is_conflict(min);
 
-        // If tie, all remaining sources are viable
+        // If conflict, all remaining sources are viable
         if (conflict)
         {
             for (int i = 0; i < source_count; i++)
@@ -131,7 +131,7 @@ void allocate(void)
 // Print the selected source, if there is one
 bool print_selected(void)
 {
-    // if any source has more than half of consumers, return true, if nobody selected, return false
+    // if any source has more than half of consumers, return true, if none selected, return false
     for (int i = 0; i < source_count; i++)
     {
         if (sources[i].supply > consumer_count / 2)
@@ -143,10 +143,10 @@ bool print_selected(void)
     return false;
 }
 
-// Return the minimum number of consumers any remaining source has
+// Return the minimum consumers any remaining source has
 int find_min(void)
 {
-    // keep track of who is eliminated and make sure to return true if they are eliminated AND have min supply. check find_min def
+    // keep track of what eliminated and make sure to return true if eliminated AND have min supply. check find_min def
     int min = consumer_count;
     for (int i = 0; i < source_count; i++)
     {
@@ -173,7 +173,7 @@ bool is_conflict(int min)
     return true;
 }
 
-// Eliminate the source (or sources) in last place
+// Eliminate the source (or sources) in last place, ie, least desirable
 void eliminate(int min)
 {
     // eliminate any source still in the system who has "min" no of consumers
